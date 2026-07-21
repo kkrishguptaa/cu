@@ -1,0 +1,33 @@
+/* ========== External CSS file for Hobbit (Lab 3) ========== */
+
+/* Universal selector — applies to every element */
+* {
+  box-sizing: border-box;
+}
+
+/* Grouping selector — shared rules for multiple elements */
+h1,
+h3 {
+  letter-spacing: 0.02em;
+}
+
+/* Class selector — targets elements with class="section-text" */
+.section-text {
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+/* Class selector — form layout helpers */
+.form-field {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* ID selector — targets the element with id="site-footer" */
+#site-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
