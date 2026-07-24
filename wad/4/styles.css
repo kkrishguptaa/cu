@@ -1,0 +1,141 @@
+/* ========== External CSS file for Hobbit (Lab 4) ========== */
+
+/* Universal selector — applies to every element */
+* {
+  box-sizing: border-box;
+}
+
+/* Grouping selector — shared rules for multiple elements */
+h1,
+h3 {
+  letter-spacing: 0.02em;
+}
+
+/* Class selector — targets elements with class="section-text" */
+.section-text {
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+/* Class selector — form layout helpers */
+.form-field {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* ========== 1) CSS Colors: RGB, HEX and HSL ========== */
+
+/* HEX — header title shadow accent */
+#site-header h1 {
+  color: #F5F5F5;
+}
+
+/* RGB — navigation bar background */
+#site-nav {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* HSL — main content text tint */
+#site-content {
+  color: hsl(0, 0%, 96%);
+}
+
+/* HSL — footer accent */
+#site-footer {
+  color: hsl(90, 20%, 92%);
+}
+
+/* ========== 4) Website Layout: Header, Navigation Bar, Content, Footer ========== */
+
+#site-header {
+  /* Padding: Top, Right, Bottom and Left */
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+}
+
+#site-nav {
+  /* Padding: Top, Right, Bottom and Left */
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#site-content {
+  /* Padding: Top, Right, Bottom and Left */
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+#site-footer {
+  margin-top: 2rem;
+  /* Padding: Top, Right, Bottom and Left */
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ========== Module cards ========== */
+
+.modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.module-card {
+  /* RGB card background */
+  background-color: rgba(255, 255, 255, 0.12);
+  /* HEX text */
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  /* Padding: Top, Right, Bottom and Left */
+  padding-top: 1rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  min-width: 10rem;
+  flex: 1 1 10rem;
+}
+
+/* ========== 2) Borders (Five types) ========== */
+
+.border-solid {
+  border: 2px solid #FFFFFF;
+}
+
+.border-dashed {
+  border: 2px dashed rgb(255, 255, 255);
+}
+
+.border-dotted {
+  border: 2px dotted hsl(0, 0%, 100%);
+}
+
+.border-double {
+  border: 4px double #F5F5F5;
+}
+
+.border-ridge {
+  border: 3px ridge hsl(90, 40%, 85%);
+}
+
+.module-card {
+  background-color: #ded;
+  color: #111;
+}
+
+.module-card:nth-of-type(2n) {
+  background-color: #b0b;
+  color: #fff;
+}
